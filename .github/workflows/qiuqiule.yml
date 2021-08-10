@@ -18,7 +18,7 @@ jobs:
            -H "Accept: application/vnd.github.v3+json" \
            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             https://api.github.com/repos/tracer-337/awesome-2/issues/4/lock \
-           -d '{"lock_reason":"lock_reason"}'
+           -d '{"lock_reason":"resolved"}'
            curl --request POST \
           --url https://api.github.com/repos/${{ github.repository }}/issues \
           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
